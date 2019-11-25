@@ -42,13 +42,11 @@ export default () => {
 		cognitoUser.authenticateUser(authenticationDetails, {
 	        onSuccess: function (result) {
 				const accessToken = result.getAccessToken().getJwtToken();
-				console.log(accessToken);	
 				setLoading(false);
 				activateAuth(accessToken);
 	        },
 
 	        onFailure: function(err) {
-	            //console.log(err.message || JSON.stringify(err));
 	            setLoading(false);
 	        },
 	    });
