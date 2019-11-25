@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-export const TableHeader = (props)=>{
-	const columns = props.columns.map((col) =>
+export const TableHeader = ({columns})=>{
+	const renderColumns = columns.map((col) =>
 	  <div className="gc-table__header-column" key={col}>{col}</div>
 	);
 	return(
 		<div className="gc-table__header">
-			{columns}
+			{renderColumns}
 		</div>
 	)
 }
