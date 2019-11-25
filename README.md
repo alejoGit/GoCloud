@@ -1,2 +1,2 @@
 # GoCloud
-Desafío GoCloud, React, Node, AWS, cognito user pool
+Desafío GoCloud, React, Node, AWS, Cognito user pool, DynamoDB
